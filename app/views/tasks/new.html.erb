@@ -1,0 +1,9 @@
+<%= form_for(@task) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, placeholder: "Task Title" %>
+  <%= f.label :details %>
+  <%= f.text_field :details, placeholder: "Task Details" %>
+  <%= f.submit %>
+<% end %>
+
+<p><%= link_to "Back to list", tasks_path %></p>
